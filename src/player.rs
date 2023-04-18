@@ -131,11 +131,9 @@ impl Player {
                         self.gravity_speed = 0f32;
                         self.pos.y = tile.rect.bottom();
                     }
-                } 
-                
-                    else if self.velocity.y != 0f32 {
-                        self.colliding.y = false;
-                    }}
+                } else if self.velocity.y != 0f32 {
+                    self.colliding.y = false;
+                }
             }
         }
     }
